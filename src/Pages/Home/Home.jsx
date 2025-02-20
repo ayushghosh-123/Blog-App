@@ -1,6 +1,6 @@
 // import React from 'react'
 import Header from "../../Component/Header/header"
-import Post from "../../Component/Post/post"
+import Posts from "../../Component/Posts/Post"
 import Sidebar from "../../Component/sidebar/Sidebar"
 
 function Home() {
@@ -8,7 +8,7 @@ function Home() {
     <div className="Home ">
         <Header/>
         <div className="homeContainer flex">
-            <Post/>
+            <Posts/>
             <Sidebar/>
         </div>
     </div>
