@@ -1,6 +1,6 @@
 
-import Home from "./Component/Home/Home"
-import Topbar from "./Component/Topbar"
+import Home from "./Pages/Home/Home"
+import Topbar from "./Component/Topbar/Topbar"
 
 function App() {
  

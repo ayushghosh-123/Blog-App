@@ -1,7 +1,7 @@
 // import React from 'react'
-import Header from "../Header/header"
-import Post from "../Post/post"
-import Sidebar from "../sidebar/Sidebar"
+import Header from "../../Component/Header/header"
+import Post from "../../Component/Post/post"
+import Sidebar from "../../Component/sidebar/Sidebar"
 
 function Home() {
   return (
