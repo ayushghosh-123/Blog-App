@@ -5,7 +5,7 @@ import Sidebar from "../../Component/sidebar/Sidebar"
 
 function Home() {
   return (
-    <div className="Home ">
+    <div className="Home">
         <Header/>
         <div className="homeContainer flex">
             <Posts/>
