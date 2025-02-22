@@ -1,6 +1,9 @@
 // import React from "react";
 
+import { Link } from "react-router";
+
 function Topbar() {
+  // const user = true;
   return (
     <div className="w-full h-[50px] bg-white sticky top-0 flex items-center font-poppins font-medium shadow-md px-6">
       {/* Left Section - Social Icons */}
@@ -21,7 +24,7 @@ function Topbar() {
               key={index}
               className="topListItem text-gray-700 font-light text-lg hover:text-blue-500 transition-all cursor-pointer"
             >
-              {item}
+              <Link to={`/${item}`}>{item}</Link>
             </li>
           ))}
         </ul>

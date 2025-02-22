@@ -12,16 +12,17 @@ import Setting from './Pages/Settings/settings'
 import Single from './Pages/Single/single'
 // import App from './App.jsx'
 
+const user = true;
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout/>}>
-      <Route path="/Home" element ={<Home/>}/>
-      <Route path="/Posts" element ={<Post/>}/>
-      <Route path="/Register" element ={<Register/>}/>
-      <Route path="/Login" element ={<Login/>}/>
-      <Route path="/write" element ={<Write/>}/>
-      <Route path="/Setting" element ={<Setting/>}/>
-      <Route path="/Posts/:postId" element ={<Single/>}/>
+      <Route path="/HOME" element ={<Home/>}/>
+      <Route path="/POSTS" element ={<Post/>}/>
+      <Route path="/REGISTER" element ={user? <Home/> : <Register/>}/>
+      <Route path="/LOGIN" element ={user? <Home/>: <Login/>}/>
+      <Route path="/WRITE" element ={user?<Write/>:<Register/>}/>
+      <Route path="/SETTING" element ={user? <Setting/>: <Register/>}/>
+      <Route path="/POSTS/:POSTSID" element ={<Single/>}/>
     </Route>
 
   )
