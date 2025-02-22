@@ -1,5 +1,5 @@
 import Topbar from "./Component/Topbar/Topbar"
-import Setting from "./Pages/Settings/settings"
+import Register from "./Pages/Register/Register"
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Topbar/>
-      <Setting/>
+      <Register/>
     </div>
   )
 }

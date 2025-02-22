@@ -16,7 +16,7 @@ function Topbar() {
       {/* Center Section - Navigation Links */}
       <div className="topCenter w-6/12">
         <ul className="topList flex justify-center m-0 p-0 list-none space-x-6">
-          {["HOME", "ABOUT", "CONTACT", "LOGOUT"].map((item, index) => (
+          {["HOME", "ABOUT", "CONTACT","WRITE", "LOGOUT"].map((item, index) => (
             <li
               key={index}
               className="topListItem text-gray-700 font-light text-lg hover:text-blue-500 transition-all cursor-pointer"
